@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C12014FC20A8654A0088376D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12014FB20A8654A0088376D /* AppDelegate.swift */; };
-		C12014FE20A8654A0088376D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12014FD20A8654A0088376D /* ViewController.swift */; };
 		C120150120A8654A0088376D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C12014FF20A8654A0088376D /* Main.storyboard */; };
 		C120150320A8654B0088376D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C120150220A8654B0088376D /* Assets.xcassets */; };
 		C120150620A8654B0088376D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C120150420A8654B0088376D /* LaunchScreen.storyboard */; };
 		C120151120A8654C0088376D /* meteoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C120151020A8654C0088376D /* meteoTests.swift */; };
 		C120151C20A8654C0088376D /* meteoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C120151B20A8654C0088376D /* meteoUITests.swift */; };
+		C120152E20A865D50088376D /* MeteoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C120152D20A865D50088376D /* MeteoController.swift */; };
+		C120153020A867540088376D /* LocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C120152F20A867540088376D /* LocationExtension.swift */; };
+		C120153320A8699B0088376D /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = C120153220A8699B0088376D /* Api.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		C12014F820A8654A0088376D /* meteo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meteo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12014FB20A8654A0088376D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C12014FD20A8654A0088376D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C120150020A8654A0088376D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C120150220A8654B0088376D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C120150520A8654B0088376D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		C120151720A8654C0088376D /* meteoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meteoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C120151B20A8654C0088376D /* meteoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meteoUITests.swift; sourceTree = "<group>"; };
 		C120151D20A8654C0088376D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C120152D20A865D50088376D /* MeteoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoController.swift; sourceTree = "<group>"; };
+		C120152F20A867540088376D /* LocationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationExtension.swift; sourceTree = "<group>"; };
+		C120153220A8699B0088376D /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,14 @@
 		C12014FA20A8654A0088376D /* meteo */ = {
 			isa = PBXGroup;
 			children = (
+				C120153120A8697F0088376D /* Ressources */,
+				C120152B20A865800088376D /* Model */,
+				C120152A20A865730088376D /* View */,
+				C120152920A8656C0088376D /* Controller */,
 				C12014FB20A8654A0088376D /* AppDelegate.swift */,
-				C12014FD20A8654A0088376D /* ViewController.swift */,
-				C12014FF20A8654A0088376D /* Main.storyboard */,
 				C120150220A8654B0088376D /* Assets.xcassets */,
-				C120150420A8654B0088376D /* LaunchScreen.storyboard */,
 				C120150720A8654B0088376D /* Info.plist */,
+				C120152C20A8658D0088376D /* Storyboard */,
 			);
 			path = meteo;
 			sourceTree = "<group>";
@@ -123,6 +129,46 @@
 				C120151D20A8654C0088376D /* Info.plist */,
 			);
 			path = meteoUITests;
+			sourceTree = "<group>";
+		};
+		C120152920A8656C0088376D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C120152D20A865D50088376D /* MeteoController.swift */,
+				C120152F20A867540088376D /* LocationExtension.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C120152A20A865730088376D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C120152B20A865800088376D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C120152C20A8658D0088376D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C12014FF20A8654A0088376D /* Main.storyboard */,
+				C120150420A8654B0088376D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		C120153120A8697F0088376D /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				C120153220A8699B0088376D /* Api.swift */,
+			);
+			path = Ressources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +302,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C12014FE20A8654A0088376D /* ViewController.swift in Sources */,
+				C120153020A867540088376D /* LocationExtension.swift in Sources */,
+				C120152E20A865D50088376D /* MeteoController.swift in Sources */,
+				C120153320A8699B0088376D /* Api.swift in Sources */,
 				C12014FC20A8654A0088376D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

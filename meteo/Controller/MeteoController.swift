@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MeteoController.swift
 //  meteo
 //
 //  Created by christophe milliere on 13/05/2018.
@@ -7,19 +7,20 @@
 //
 
 import UIKit
+import MapKit
 
-class ViewController: UIViewController {
+class MeteoController: UIViewController {
+    
+    var locationManager: CLLocationManager?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setupLocation()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    
 
 }
-
