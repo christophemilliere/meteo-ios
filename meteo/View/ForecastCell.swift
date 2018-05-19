@@ -22,6 +22,9 @@ class ForecastCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if forecast.count >= 7 {
+            return 7
+        }
         return forecast.count
     }
     

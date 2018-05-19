@@ -16,7 +16,7 @@ extension MeteoController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return detailDay.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -24,6 +24,12 @@ extension MeteoController: UITableViewDelegate, UITableViewDataSource {
             if let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as? ForecastCell{
                 cell.setup(forecast: forecast)
                 return  cell
+            }
+        } else {
+            let forcast = detailDay[indexPath.row - 1]
+            if let cell = tableView.dequeueReusableCell(withIdentifier: cellIdDay) as? DayCell {
+                cell.setup(forecast: forcast)
+                return cell
             }
         }
         return UITableViewCell()

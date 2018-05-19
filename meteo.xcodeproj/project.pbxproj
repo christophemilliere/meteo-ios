@@ -25,6 +25,9 @@
 		C128DF9120A8A5C800DF1322 /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128DF9020A8A5C800DF1322 /* ForecastCell.swift */; };
 		C128DF9520A8AA0500DF1322 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128DF9420A8AA0500DF1322 /* CollectionCell.swift */; };
 		C128DF9720A8ACEE00DF1322 /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128DF9620A8ACEE00DF1322 /* TableViewExtension.swift */; };
+		C160E32020B00AA20065F8CE /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E31F20B00AA20065F8CE /* DateHelper.swift */; };
+		C160E32220B01ED80065F8CE /* DetailDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E32120B01ED70065F8CE /* DetailDay.swift */; };
+		C160E32420B036C80065F8CE /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E32320B036C80065F8CE /* DayCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,9 @@
 		C128DF9420A8AA0500DF1322 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		C128DF9620A8ACEE00DF1322 /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
 		C138A1FDF39A416A21480BF8 /* Pods-meteoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meteoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-meteoTests/Pods-meteoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C160E31F20B00AA20065F8CE /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		C160E32120B01ED70065F8CE /* DetailDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDay.swift; sourceTree = "<group>"; };
+		C160E32320B036C80065F8CE /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
 		C249B0F23A26450BB4293665 /* Pods-meteoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meteoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-meteoUITests/Pods-meteoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +181,7 @@
 			children = (
 				C128DF9020A8A5C800DF1322 /* ForecastCell.swift */,
 				C128DF9420A8AA0500DF1322 /* CollectionCell.swift */,
+				C160E32320B036C80065F8CE /* DayCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -185,6 +192,8 @@
 				C128DF8A20A88BB800DF1322 /* Forecast.swift */,
 				C128DF8C20A89F9000DF1322 /* Extension.swift */,
 				C128DF8E20A8A0DB00DF1322 /* ImageDownloader.swift */,
+				C160E31F20B00AA20065F8CE /* DateHelper.swift */,
+				C160E32120B01ED70065F8CE /* DetailDay.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -443,11 +452,14 @@
 				C128DF8F20A8A0DB00DF1322 /* ImageDownloader.swift in Sources */,
 				C128DF9520A8AA0500DF1322 /* CollectionCell.swift in Sources */,
 				C120152E20A865D50088376D /* MeteoController.swift in Sources */,
+				C160E32420B036C80065F8CE /* DayCell.swift in Sources */,
 				C120153320A8699B0088376D /* Api.swift in Sources */,
 				C128DF9120A8A5C800DF1322 /* ForecastCell.swift in Sources */,
 				C128DF8D20A89F9000DF1322 /* Extension.swift in Sources */,
+				C160E32220B01ED80065F8CE /* DetailDay.swift in Sources */,
 				C12014FC20A8654A0088376D /* AppDelegate.swift in Sources */,
 				C128DF8B20A88BB800DF1322 /* Forecast.swift in Sources */,
+				C160E32020B00AA20065F8CE /* DateHelper.swift in Sources */,
 				C128DF9720A8ACEE00DF1322 /* TableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

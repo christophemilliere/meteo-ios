@@ -18,8 +18,10 @@ class CollectionCell: UICollectionViewCell {
     
     func setup(forecast: Forecast) {
         self.forecast = forecast
+        layer.cornerRadius = 20
+        
         ImageDownloader.getImage.imageSince(self.forecast.icon, imageView: icon)
         temperature.text = self.forecast.temperature.convertIntString()
-        desc.text = self.forecast.desc
+        desc.text = self.forecast.day + "  " + (DateHelper.get.time(self.forecast.date) ?? "") + "\n" + self.forecast.desc
     }
 }

@@ -36,7 +36,9 @@ class Forecast{
         self._date = date
         self._icon = icon
         self._desc = desc
-        self._day = ""
+        self._day = DateHelper.get.dayWeek(self._date) ?? ""
+        
+        print(DateHelper.get.time(self._date) ?? "")
     }
     
 }
